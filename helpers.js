@@ -15,3 +15,23 @@ export function randomArray(len, n) {
 function randomInt(n) {
     return Math.floor(Math.random() * (n + 1))
 }
+
+let h = [8, 2, 4, 7]
+
+export function swap(k, a, b) {
+    let temp = k[a];
+    k[a] = k[b];
+    k[b] = temp;
+}
+
+swap(h, 0, 1);
+swap(h, 1, 3);
+swap(h, 2, 1);
+
+console.log(h)
+
+// function swap(array, a, b) {
+//     const temp = array[a];
+//     array[a] = array[b];
+//     array[b] = temp;
+// }
